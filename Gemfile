@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails',      '6.0.3'
+gem 'bootstrap', '~> 4.3.1'
+gem "jquery-rails", "~> 4.3"
 gem 'puma',       '4.3.4'
 gem 'sassc-rails'
 gem 'webpacker',  '4.0.7'
@@ -30,6 +32,7 @@ group :test do
   gem 'minitest-reporters',       '1.3.8'
   gem 'guard',                    '2.16.2'
   gem 'guard-minitest',           '2.4.6'
+  gem 'rspec-rails'
 end
 
 group :production do

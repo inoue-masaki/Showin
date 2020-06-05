@@ -10,6 +10,20 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require rails-ujs
+//= require activestorage
 //= require turbolinks
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+//= require_tree ../../../vendor/assets/javascripts/.
 //= require_tree .
+
+$(document).ready(function() {
+  $('.jumbotron').ripples({ //波紋をつけたい要素の指定
+        resolution: 800, //波紋の広がりの速度（値が大きいほど遅くなる）
+        dropRadius: 30, //波紋の大きさ（値が大きいほどでかくなる）
+        perturbance: 0.002 //波紋による屈折量（値が大きいほどブレる）
+    });
+});
