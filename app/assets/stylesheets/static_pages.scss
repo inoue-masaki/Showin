@@ -1,0 +1,92 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import "bootstrap";
+
+$lantern-light-white: #f5f5f6;
+$lantern-dark-white: #cdced1;
+$lantern-black: #050c17;
+$lantern-red: #b1046b;
+$lantern-violet: #640c41;
+$lantern-yellow: #bdb319;
+$lantern-blue: #0071bc;
+$lantern-dark-blue: #0c2e64;
+
+body {
+  background-color: $lantern-black;
+}
+
+// header
+
+.navbar-extend {
+  margin-bottom: 0;
+  background-color: $lantern-black;
+  opacity: 0.9;
+  ul li a button {
+    padding: 0.375rem 1.5rem;
+  }
+}
+
+.logo-img:hover {
+  opacity: 0.6;
+}
+
+.logo-text {
+  padding-top: 2px;
+  :hover {
+    opacity: 0.6;
+  }
+}
+
+// jumbotron
+
+.jumbotron-extend {
+  background-image:  image-url("shinkai_01.jpg");
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  .container {
+    margin-top: 6rem;
+    h1,
+    p {
+      margin-bottom: 0.75rem;
+      color: $lantern-light-white;
+    }
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+    p:last-of-type {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+// discription
+
+.discription-container h2, .discription-container p {
+  color: $lantern-light-white;
+}
+
+.discription-container {
+  margin: 3rem 0;
+  padding: 3rem 1rem;
+  h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1.8rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 2.1rem;
+  }
+}
+
+.discription-img-container {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.discription-img {
+  width: 12rem;
+  border-radius: 0.1rem;
+}

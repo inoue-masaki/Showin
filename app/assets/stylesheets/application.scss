@@ -18,10 +18,11 @@ body {
 
 // header
 
-.navbar-extend {
+.navbar-expand {
   margin-bottom: 0;
   background-color: $lantern-black;
-  opacity: 0.9;
+　opacity: 0.9;
+
   ul li a button {
     padding: 0.375rem 1.5rem;
   }
@@ -42,7 +43,6 @@ body {
 
 .jumbotron-extend {
   background-image:  image-url("shinkai_01.jpg");
-  
   background-size: cover;
   background-repeat: no-repeat;
   .container {
