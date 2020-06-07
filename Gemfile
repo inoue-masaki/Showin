@@ -14,6 +14,7 @@ gem 'jbuilder',   '2.9.1'
 gem 'bootsnap',   '1.4.5', require: false
 
 group :development, :test do
+  gem "factory_bot_rails"
   gem 'sqlite3', '1.4.1'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end

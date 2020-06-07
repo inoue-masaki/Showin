@@ -98,7 +98,7 @@ body {
   width: 100%;
   max-width: 330px;
   margin: auto;
-  padding-top: 1rem !important;
+  padding-top: 10rem !important;
 }
 
 .signup-logo-img {
@@ -110,6 +110,10 @@ body {
   font-weight: normal;
   font-size: 1.5rem;
   margin-bottom: 2rem;
+}
+
+.signup-title  {
+  color: $lantern-light-white
 }
 
 .form-control {
@@ -136,3 +140,85 @@ body {
 .alert-form-extend {
   margin: 1.5rem 0 1rem;
 }
+
+
+
+
+
+// max-width = 768px
+@media (max-width: 768px) {
+  .nav-item-extend {
+    margin-top: 0.6rem;
+  }
+}
+
+// button
+.btn-extend {
+  width: 8.5rem;
+}
+
+// header
+.navbar-extend {
+  margin-bottom: 0;
+  background-color: $lantern-black;
+  opacity: 0.9;
+  ul li a button {
+    padding: 0.375rem 1.5rem;
+  }
+}
+
+.logo-img:hover {
+  opacity: 0.6;
+}
+
+.logo-text {
+  padding-top: 2px;
+  :hover {
+    opacity: 0.6;
+  }
+}
+
+.nav-item-extend {
+  > a:not(.btn-extend) {
+    // text-decoration: none;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  > a {
+    margin-left: 1rem;
+    float: right;
+  }
+}
+
+.nav-link {
+  color: $lantern-dark-white;
+}
+
+
+// login
+
+.form-go-to-signup-or-login {
+  color: $lantern-light-white
+}
+
+.login-container {
+  width: 100%;
+  max-width: 330px;
+  margin: auto;
+  padding-top: 10rem !important;
+}
+
+.form-logo-img {
+  text-align: center;
+}
+
+.form-submit {
+  width: 100%;
+  // margin-top: 1rem; // 削除
+}
+
+.form-check-label {
+  color: $lantern-dark-white;
+}
+
