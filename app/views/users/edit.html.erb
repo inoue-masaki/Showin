@@ -1,0 +1,50 @@
+<% provide(:title, 'プロフィール編集') %>
+<div class="container edit-container">
+  <div class="edit-title">
+    <%= image_tag 'profile.png', class: 'edit-img' %>
+    <h1 class="form-title form-title-edit">プロフィール編集</h1>
+  </div>
+  <%= form_with(model: @user, url: user_path(@user), local: true) do |form| %>
+  <div class="card-deck">
+    <div class="col-md-6">
+      <section class="card">
+        <h2 class="card-header form-title">アカウント情報変更</h2>
+        <div class="card-body">
+          <%= render 'shared/error_messages' %>
+
+          <div class="form-group">
+            <%= form.text_field :name, class: 'form-control', placeholder: "名前" %>
+          </div>
+          <div class="form-group">
+            <%= form.email_field :email, class: 'form-control', placeholder: "メールアドレス" %>
+          </div>
+          <div class="form-group">
+            <%= form.password_field :password, class: 'form-control', placeholder: "パスワード" %>
+          </div>
+          <div class="form-group">
+            <%= form.password_field :password_confirmation, class: 'form-control', placeholder: "パスワード（再入力）" %>
+          </div>
+          <div class="form-group">
+            <%= form.submit "変更", class: 'btn btn-info btn-lg form-submit' %>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-md-6">
+      <section class="card">
+        <h2 class="card-header form-title">記録時間リセット</h2>
+        <div class="card-body">
+          <div class="form-group form-group-reset_time">
+            <%= form.check_box :reset_time, class: 'form-check-input' %>
+            <%= form.label :reset_time, '記録時間をリセットする', class: 'form-check-label' %>
+          </div>
+          <div class="form-group">
+            <%= form.submit "変更", class: 'btn btn-info btn-lg form-submit' %>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <% end %>
+</div>
