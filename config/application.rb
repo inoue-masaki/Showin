@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
+
 module HelloApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
@@ -16,6 +18,7 @@ module HelloApp
     # -- all .rb files in that directory are automatically loaded.
     config.i18n.default_locale = :ja
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
+    config.assets.initialize_on_precompile = false 
   end
 end
 
