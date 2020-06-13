@@ -1,0 +1,40 @@
+<h1 class="log-title col-2">Logs</h1>
+<% if @user.microposts.any? %>
+  <div class="container">
+    <ol class="microposts">
+    <% @microposts.each do |micropost| %>
+        <li id ="micropost-<%= micropost.id %>">
+          <span class="row log-list">
+            <span class="col-2 log-timestamp d-none d-md-inline-block log-timestamp-block">
+              <span class="log-timestamp"><%= time_ago_in_words(micropost.created_at) %>前</span>
+            </span>
+            <span class="col-md-10 col-log-memos">
+              <div class="log-time-and-edit">
+                <div class="row">
+                  <span class="log-time col-3">
+                    <% if micropost.time.nil? %>
+                      0分
+                    <% else %>
+                      <%= micropost.time %>分
+                    <% end %>
+                  </span>
+                  <span class="col-7 log-timestamp log-timestamp-inline"><%= time_ago_in_words(micropost.created_at) %>前</span>
+                  <span class="log-edit col-2"><%= link_to image_tag('edit.png', class: "log-edit-image"), edit_micropost_path %></span>
+                </div>
+              </div>
+              <span class="log-memo"><%= micropost.memo %></span>
+              <% if micropost.picture.attached? %>
+                <div class="log-picture">
+                  <%= image_tag micropost.resize_picture %>
+                </div>
+              <% end %>
+            </span>
+          </span>  
+        </li>
+    <% end %>
+    </ol>
+  </div>
+  <%= paginate @microposts %>
+<% else %>
+  <span>まだ投稿がありません</span>
+<% end %>

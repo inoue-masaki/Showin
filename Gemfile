@@ -2,7 +2,12 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails',      '6.0.3'
+gem 'mini_magick'
+gem 'aws-sdk-s3'
+gem 'kaminari'
+gem 'kaminari-bootstrap'
 gem 'rails-i18n'
+gem 'faker'
 gem 'bcrypt', '3.1.12'
 gem 'bootstrap', '~> 4.3.1'
 gem "jquery-rails", "~> 4.3"

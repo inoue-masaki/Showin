@@ -7,6 +7,7 @@ class User < ApplicationRecord
     validates :email,presence: true,length: {maximum: 255},format: {with: VALID_EMAIL_REGEX},uniqueness: {case_sensitive: false}
     has_secure_password
     validates :password,presence: true,length: { minimum: 6 }
+    has_many :microposts, dependent: :destroy
     
     
 #クラスメソッド　トークン生成  
@@ -40,6 +41,10 @@ end
   
   def activate
     update_attribute(:activated, true)
+  end
+  
+  def password_reset_expired?
+    reset_sent_at < 2.hours.ago
   end
 
 private

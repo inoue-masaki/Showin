@@ -10,4 +10,9 @@ class UserMailer < ApplicationMailer
     @greeting = "Hi"
     mail to: "to@example.org"
   end
+  
+  def password_reset(user)
+    @user = user
+    mail to: user.email, subject: "【重要】Lantern Lanternよりパスワード再設定のためのメールを届けました"
+  end
 end

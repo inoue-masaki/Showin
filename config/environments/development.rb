@@ -57,4 +57,7 @@ Rails.application.configure do
   
   # Cloud9 への接続を許可する
   config.hosts.clear
+  
+  # Store uploaded files on the local file system (see config/storage.yml for options)
+  config.active_storage.service = :amazon
 end

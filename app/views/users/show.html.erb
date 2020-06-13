@@ -1,16 +1,16 @@
 <% provide(:title, @user.name) %>
-<div class="container">
+<div class="container show-container">
   <div class="row">
-    <div class="col bg-primary">
-      form
+    <div class="col">
+      <%= render 'layouts/micropost_form' %>
     </div>
     <div class="col bg-secondary">
       figure
     </div>
   </div>
   <div class="row">
-    <div class="col bg-warning">
-      log
+    <div class="col">
+      <%= render 'layouts/log' %>
     </div>
   </div>
 </div>

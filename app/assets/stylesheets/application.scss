@@ -61,6 +61,10 @@ body {
   }
 }
 
+.btn-lg-start{
+  width: 30%;
+}
+
 // discription
 
 .discription-container h2, .discription-container p {
@@ -227,4 +231,156 @@ body {
 .form-title-edit {
   color: $lantern-dark-white;
 }
+
+//password reset
+
+.form-title {
+  color: $lantern-dark-white;
+}
+
+.password_reset-container {
+  width: 100%;
+  max-width: 330px;
+  margin: auto;
+  padding-top: 10rem !important;
+}
+
+
+// max-width = 767px
+@media (max-width: 767px) {
+  .nav-item-extend {
+    margin-top: 0.6rem;
+  }
+
+  .log-title {
+    padding: 0;
+  }
+
+  .log-list {
+    border-left: 1px solid $lantern-dark-white;
+  }
+}
+
+@media (min-width: 768px) {
+  .log-timestamp-inline {
+    visibility: hidden;
+  }
+}
+
+// 中略
+
+// logs
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+.log-title {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.log-title {
+  color: $lantern-light-white;
+}
+
+.log-list {
+  margin-bottom: 1rem;
+
+  .log-timestamp {
+    color: gray;
+  }
+
+  .log-timestamp-block {
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-top: 0.1rem;
+    border-right: 1px solid $lantern-dark-white;
+  }
+
+  .col-log-memos {
+    padding: 0 1rem 0 1rem;
+
+    .log-time-and-edit {
+      .log-time {
+        font-size: 1.2rem;
+        color: $lantern-yellow;
+      }
+
+      .log-timestamp-inline {
+        text-align: right;    
+        margin-top: 0.1rem;
+        padding: 0;
+      }
+
+      .log-edit {
+        text-align: right;
+        margin-top: 0.1rem;
+
+        .log-edit-image {
+          width: 1rem;
+        }
+      }
+    }
+
+    .log-memo {
+      color: $lantern-light-white;
+    }
+
+    .log-picture {
+    }
+  }
+}
+
+// paginate
+.pagination {
+  margin-top: 1.6rem;
+
+  .page-item {
+    .page-link {
+      border: 1px solid $lantern-light-white;
+      background-color: $lantern-light-white;
+      color: $lantern-blue;
+    }
+  }
+
+  .page-item.active .page-link {
+    background-color: $lantern-blue;
+    border-color: $lantern-blue;
+    color: $lantern-light-white;
+  }
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.show-container {
+  margin-top: 5rem;
+}
+
+.show-container{
+  background-color: $lantern-black;
+}
+
+.show-container {
+  color: $lantern-light-white;
+}
+
+.edit-container {
+  color: $lantern-light-white;
+}
+
+.micropost-edit-container{
+  color: $lantern-light-white;
+}
+
+.btn-lg{
+  width: 100%;
+}
+
+.btn-back {
+  background-color: $lantern-black;
+}
+
 
