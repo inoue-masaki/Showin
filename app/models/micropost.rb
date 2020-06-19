@@ -5,7 +5,7 @@ class Micropost < ApplicationRecord
   validates :user_id, presence: true
   validates :memo, length: { maximum: 255 }
   validates :only_user_id, presence: true
-  validate :validate_picture
+  validate :picture
 
   def resize_picture
     return self.picture.variant(resize: '100x100').processed

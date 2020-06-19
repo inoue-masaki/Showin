@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails',      '6.0.3'
+gem 'rmagick'
 gem 'mini_magick'
 gem 'aws-sdk-s3'
 gem 'kaminari'
