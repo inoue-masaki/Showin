@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails',      '6.0.3'
-gem 'rmagick'
 gem 'mini_magick'
 gem 'aws-sdk-s3'
 gem 'kaminari'
@@ -20,6 +19,7 @@ gem 'jbuilder',   '2.9.1'
 gem 'bootsnap',   '1.4.5', require: false
 
 group :development, :test do
+  gem 'rails-controller-testing'
   gem "factory_bot_rails"
   gem 'sqlite3', '1.4.1'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
@@ -36,7 +36,6 @@ group :test do
   gem 'capybara',                 '3.28.0'
   gem 'selenium-webdriver',       '3.142.4'
   gem 'webdrivers',               '4.1.2'
-  gem 'rails-controller-testing', '1.0.4'
   gem 'minitest',                 '5.11.3'
   gem 'minitest-reporters',       '1.3.8'
   gem 'guard',                    '2.16.2'

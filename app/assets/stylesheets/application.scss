@@ -19,8 +19,9 @@ body {
 // header
 
 .navbar-expand {
+  width: 100%; 
   margin-bottom: 0;
-  background-color: $lantern-black;
+  
 　opacity: 0.9;
 
   ul li a button {
@@ -46,7 +47,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   .container {
-    margin-top: 6rem;
     h1,
     p {
       margin-bottom: 0.75rem;
@@ -267,8 +267,6 @@ body {
   }
 }
 
-// 中略
-
 // logs
 ol {
   padding: 0;
@@ -383,4 +381,34 @@ ol {
   background-color: $lantern-black;
 }
 
+.card-body {
+  background-color: $lantern-black;
+}
 
+.card-header {
+  background-color: $lantern-black;
+}
+
+.edit-title {
+  justify-content: center;
+}
+
+.alert-danger {
+  position: fixed;
+   width: 100%;
+}
+
+.alert-warning {
+  position: fixed;
+   width: 100%;
+}
+
+.alert-info {
+  position: fixed;
+   width: 100%;
+}
+
+.alert-success {
+  position: fixed;
+   width: 100%;
+}

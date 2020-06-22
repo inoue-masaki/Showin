@@ -19,7 +19,7 @@
                     <% end %>
                   </span>
                   <span class="col-7 log-timestamp log-timestamp-inline"><%= time_ago_in_words(micropost.created_at) %>前</span>
-                  <span class="log-edit col-2"><%= link_to image_tag('edit.png', class: "log-edit-image"), edit_micropost_path %></span>
+                  <span class="log-edit col-2"><%= link_to image_tag('edit.png', class: "log-edit-image"), edit_micropost_path((micropost)) %></span>
                 </div>
               </div>
               <span class="log-memo"><%= micropost.memo %></span>

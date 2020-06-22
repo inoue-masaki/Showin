@@ -15,7 +15,7 @@ class MicropostsController < ApplicationController
   end
 
   def edit
-    @micropost = current_user.microposts.find_by(id: params[:id]) || nil
+    @micropost = current_user.microposts.find_by(id: params[:id])
     if @micropost.nil?
       flash[:warning] = "編集権限がありません"
       redirect_to root_url
@@ -40,6 +40,7 @@ class MicropostsController < ApplicationController
   end
 
   private
+  
     def micropost_params
       params.permit(:memo, :time, :picture)
     end
@@ -47,5 +48,13 @@ class MicropostsController < ApplicationController
     def correct_user
       @micropost = current_user.microposts.find_by(id: params[:id])
       redirect_to root_url if @micropost.nil?
+    end
+    
+    def logged_in_user
+      unless logged_in?
+        store_location
+        flash[:warning] = 'ログインしてください'
+        redirect_to login_url
+      end
     end
 end

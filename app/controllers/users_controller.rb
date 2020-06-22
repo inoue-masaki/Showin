@@ -36,6 +36,14 @@ class UsersController < ApplicationController
       redirect_to edit_user_path(@user)
     end
   end
+  
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash[:warning] = 'ログインしてください'
+      redirect_to login_url
+    end
+  end
 
   private
 
@@ -43,13 +51,7 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
     
-    def logged_in_user
-      unless logged_in?
-        store_location
-        flash[:warning] = 'ログインしてください'
-        redirect_to login_url
-      end
-    end
+  
     
     def correct_user
       @user = User.find(params[:id])
