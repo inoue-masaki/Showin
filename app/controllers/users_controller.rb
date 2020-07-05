@@ -20,6 +20,8 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @microposts = @user.microposts.page(params[:page]).per(10)
+    @period = params[:period]
+    @chart = @user.microposts_period(@period)
   end
   
   def edit
@@ -42,6 +44,15 @@ class UsersController < ApplicationController
       store_location
       flash[:warning] = 'ログインしてください'
       redirect_to login_url
+    end
+  end
+  
+  def destroy
+    @user = User.find(params[:id])
+    if params[:microposts][:reset_time] == '1'
+      @user.microposts.destroy_all
+      flash[:success] = '記録時間とメモをリセットしました'
+      redirect_to edit_user_path(@user)
     end
   end
 

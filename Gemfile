@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails',      '6.0.3'
+gem 'chartkick'
 gem 'mini_magick'
 gem 'aws-sdk-s3'
 gem 'kaminari'
@@ -17,12 +18,14 @@ gem 'webpacker',  '4.0.7'
 gem 'turbolinks', '5.2.0'
 gem 'jbuilder',   '2.9.1'
 gem 'bootsnap',   '1.4.5', require: false
+gem 'jquery-turbolinks'
 
 group :development, :test do
   gem 'rails-controller-testing'
   gem "factory_bot_rails"
   gem 'sqlite3', '1.4.1'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'database_cleaner'
 end
 
 group :development do

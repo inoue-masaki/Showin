@@ -1,7 +1,7 @@
 <% provide(:title, 'メモ編集') %>
 <div class="container micropost-edit-container">
-  <div class="edit-titles">
-    <%= image_tag 'edit_02.png', class: 'edit-img' %>
+  <div class="log-title">
+    <%= image_tag 'memo.png', class: 'edit-img' %>
     <h1 class="title edit-micropost-title">メモ編集</h1>
   </div>
   <%= form_with(model: @micropost, url: micropost_path, local: true) do |form| %>

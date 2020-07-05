@@ -2,7 +2,9 @@
   "name": "hello_app",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^5.1.1"
+    "@rails/webpacker": "^5.1.1",
+    "chart.js": "^2.9.3",
+    "chartkick": "^3.2.0"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.11.0"

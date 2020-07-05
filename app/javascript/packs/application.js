@@ -14,5 +14,9 @@
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+require("chartkick")
+require("chart.js")
 
 console.log('Hello World from Webpacker')
+
+

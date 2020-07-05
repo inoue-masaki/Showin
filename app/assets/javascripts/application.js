@@ -20,10 +20,29 @@
 //= require_tree ../../../vendor/assets/javascripts/.
 //= require_tree .
 
+/* global $ */
+//= require chartkick
+//= require Chart.bundle
+
+
+
+
 $(document).ready(function() {
   $('.jumbotron').ripples({ //波紋をつけたい要素の指定
         resolution: 800, //波紋の広がりの速度（値が大きいほど遅くなる）
         dropRadius: 30, //波紋の大きさ（値が大きいほどでかくなる）
         perturbance: 0.002 //波紋による屈折量（値が大きいほどブレる）
-    });
+  });
+});
+
+$(function() {
+  $('#microposts_reset_time_submit').attr('disabled', true);
+
+  $('#microposts_reset_time').click(function() {
+    if ( $(this).is(':checked') ){
+      $('#microposts_reset_time_submit').attr('disabled', false);
+    } else {
+      $('#microposts_reset_time_submit').attr('disabled', true);
+    }
+  });
 });

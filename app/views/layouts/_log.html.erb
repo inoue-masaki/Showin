@@ -1,4 +1,4 @@
-<h1 class="log-title col-2">Logs</h1>
+<h1 class="log-title col-2">履歴</h1>
 <% if @user.microposts.any? %>
   <div class="container">
     <ol class="microposts">
@@ -19,7 +19,7 @@
                     <% end %>
                   </span>
                   <span class="col-7 log-timestamp log-timestamp-inline"><%= time_ago_in_words(micropost.created_at) %>前</span>
-                  <span class="log-edit col-2"><%= link_to image_tag('edit.png', class: "log-edit-image"), edit_micropost_path((micropost)) %></span>
+                  <span class="log-edit col-2"><%= link_to image_tag('memo.png', class: "log-edit-image"), edit_micropost_path(micropost) %></span>
                 </div>
               </div>
               <span class="log-memo"><%= micropost.memo %></span>
