@@ -3,8 +3,8 @@
     <nav class="navbar navbar-expand-sm fixed-top navbar-expand">
       <a class="navbar-brand" href="#">
         <div class="navbar-brand-extend">
-          <%= link_to image_tag('lantern_lantern_logo.png',width: 50),root_path, class: "logo-img" %>
-          <%= link_to image_tag('lantern_lantern_text.png',height: 30),root_path, class: "logo-text" %>
+          <%= link_to image_tag('Showin_logo.png',width: 50),root_path, class: "logo-img" %>
+          <%= link_to image_tag('Showin_text.png',height: 30),root_path, class: "logo-text" %>
         </div>
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
@@ -19,6 +19,7 @@
           <% else %>
             <li class="nav-item nav-item-extend"><%= link_to "新しく始める", signup_path, class: "btn btn-info btn-md btn-extend" %></li>
             <li class="nav-item nav-item-extend"><%= link_to "ログイン", login_path, class: "btn btn-info btn-md btn-extend btn-login-extend" %></li>
+            <li class="nav-item nav-item-extend"><%= link_to "ゲストユーザー", guest_path,method: :post, class: "btn btn-info btn-login-extend navbar-extend-b navbar-extend-c" %></li>
           <% end %>
         </ul>
       </div>

@@ -5,17 +5,18 @@
 @import "bootstrap";
 
 
-$lantern-light-white: #f5f5f6;
-$lantern-dark-white: #cdced1;
-$lantern-black: #050c17;
-$lantern-red: #b1046b;
-$lantern-violet: #640c41;
-$lantern-yellow: #bdb319;
-$lantern-blue: #0071bc;
-$lantern-dark-blue: #0c2e64;
+$Showin-light-white: #f5f5f6;
+$Showin-dark-white: #cdced1;
+$Showin-black: #050c17;
+$Showin-red: #b1046b;
+$Showin-violet: #640c41;
+$Showin-yellow: #bdb319;
+$Showin-blue: #0071bc;
+$Showin-dark-blue: #0c2e64;
+$Showin-green: #008000;
 
 body {
-  background-color: $lantern-black;
+  background-color: $Showin-black;
 }
 
 // header
@@ -23,7 +24,7 @@ body {
 .navbar-expand {
   width: 100%; 
   margin-bottom: 0;
-  background-color: $lantern-black;
+  background-color: $Showin-black;
 　opacity: 0.9;
 
   ul li a button {
@@ -52,7 +53,7 @@ body {
     h1,
     p {
       margin-bottom: 0.75rem;
-      color: $lantern-light-white;
+      color: $Showin-light-white;
     }
     h1 {
       margin-bottom: 1.5rem;
@@ -67,10 +68,11 @@ body {
   width: 30%;
 }
 
+
 // discription
 
 .discription-container h2, .discription-container p {
-  color: $lantern-light-white;
+  color: $Showin-light-white;
 }
 
 .discription-container {
@@ -119,7 +121,7 @@ body {
 }
 
 .signup-title  {
-  color: $lantern-light-white
+  color: $Showin-light-white
 }
 
 .form-control {
@@ -143,12 +145,6 @@ body {
   border-color: red;
 }
 
-.alert-form-extend {
-  margin: 1.5rem 0 1rem;
-}
-
-
-
 
 
 // max-width = 768px
@@ -163,14 +159,23 @@ body {
   width: 8.5rem;
 }
 
+
 // header
 .navbar-extend {
   margin-bottom: 0;
-  background-color: $lantern-black;
+  background-color: $Showin-black;
   opacity: 0.9;
   ul li a button {
     padding: 0.375rem 1.5rem;
   }
+}
+
+.navbar-extend-b{
+  background-color: $Showin-green;
+}
+
+.navbar-extend-c{
+  border-color:     $Showin-green;
 }
 
 .logo-img:hover {
@@ -198,14 +203,14 @@ body {
 }
 
 .nav-link {
-  color: $lantern-dark-white;
+  color: $Showin-dark-white;
 }
 
 
 // login
 
 .form-go-to-signup-or-login {
-  color: $lantern-light-white
+  color: $Showin-light-white
 }
 
 .login-container {
@@ -225,19 +230,19 @@ body {
 }
 
 .form-check-label {
-  color: $lantern-dark-white;
+  color: $Showin-dark-white;
 }
 
 
 //edit
 .form-title-edit {
-  color: $lantern-dark-white;
+  color: $Showin-dark-white;
 }
 
 //password reset
 
 .form-title {
-  color: $lantern-dark-white;
+  color: $Showin-dark-white;
 }
 
 .password_reset-container {
@@ -259,7 +264,7 @@ body {
   }
 
   .log-list {
-    border-left: 1px solid $lantern-dark-white;
+    border-left: 1px solid $Showin-dark-white;
   }
 }
 
@@ -281,7 +286,7 @@ ol {
 }
 
 .log-title {
-  color: $lantern-light-white;
+  color: $Showin-light-white;
 }
 
 .log-list {
@@ -295,7 +300,7 @@ ol {
     text-align: center;
     padding-bottom: 2rem;
     margin-top: 0.1rem;
-    border-right: 1px solid $lantern-dark-white;
+    border-right: 1px solid $Showin-dark-white;
   }
 
   .col-log-memos {
@@ -304,7 +309,7 @@ ol {
     .log-time-and-edit {
       .log-time {
         font-size: 1.2rem;
-        color: $lantern-yellow;
+        color: $Showin-yellow;
       }
 
       .log-timestamp-inline {
@@ -324,7 +329,7 @@ ol {
     }
 
     .log-memo {
-      color: $lantern-light-white;
+      color: $Showin-light-white;
     }
 
     .log-picture {
@@ -338,16 +343,16 @@ ol {
 
   .page-item {
     .page-link {
-      border: 1px solid $lantern-light-white;
-      background-color: $lantern-light-white;
-      color: $lantern-blue;
+      border: 1px solid $Showin-light-white;
+      background-color: $Showin-light-white;
+      color: $Showin-blue;
     }
   }
 
   .page-item.active .page-link {
-    background-color: $lantern-blue;
-    border-color: $lantern-blue;
-    color: $lantern-light-white;
+    background-color: $Showin-blue;
+    border-color: $Showin-blue;
+    color: $Showin-light-white;
   }
 }
 
@@ -360,19 +365,19 @@ ol {
 }
 
 .show-container{
-  background-color: $lantern-black;
+  background-color: $Showin-black;
 }
 
 .show-container {
-  color: $lantern-light-white;
+  color: $Showin-light-white;
 }
 
 .edit-container {
-  color: $lantern-light-white;
+  color: $Showin-light-white;
 }
 
 .micropost-edit-container{
-  color: $lantern-light-white;
+  color: $Showin-light-white;
 }
 
 .btn-lg{
@@ -380,45 +385,26 @@ ol {
 }
 
 .btn-back {
-  background-color: $lantern-black;
+  background-color: $Showin-black;
 }
 
 .card-body {
-  background-color: $lantern-black;
+  background-color: $Showin-black;
 }
 
 .card-header {
-  background-color: $lantern-black;
+  background-color: $Showin-black;
 }
 
 .edit-title {
   justify-content: center;
 }
 
-.alert-danger {
-  position: fixed;
-   width: 100%;
-}
-
-.alert-warning {
-  position: fixed;
-   width: 100%;
-}
-
-.alert-info {
-  position: fixed;
-   width: 100%;
-}
-
-.alert-success {
-  position: fixed;
-   width: 100%;
-}
-
 .figure-container {
-  background-color: $lantern-black;
+  background-color: $Showin-black;
 }
 
 .figure-sum-and-button {
-  background-color: $lantern-black;
+  background-color: $Showin-black;
 }
+

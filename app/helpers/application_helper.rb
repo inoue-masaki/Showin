@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def full_title(page_title = '')
-    base_title = "Lantern Lantern" # 自分のアプリ名
+    base_title = "Showin"
     if page_title.empty?
       base_title
     else

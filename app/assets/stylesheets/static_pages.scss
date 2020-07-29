@@ -3,24 +3,24 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 @import "bootstrap";
 
-$lantern-light-white: #f5f5f6;
-$lantern-dark-white: #cdced1;
-$lantern-black: #050c17;
-$lantern-red: #b1046b;
-$lantern-violet: #640c41;
-$lantern-yellow: #bdb319;
-$lantern-blue: #0071bc;
-$lantern-dark-blue: #0c2e64;
+$Showin-light-white: #f5f5f6;
+$Showin-dark-white: #cdced1;
+$Showin-black: #050c17;
+$Showin-red: #b1046b;
+$Showin-violet: #640c41;
+$Showin-yellow: #bdb319;
+$Showin-blue: #0071bc;
+$Showin-dark-blue: #0c2e64;
 
 body {
-  background-color: $lantern-black;
+  background-color: $Showin-black;
 }
 
 // header
 
 .navbar-extend {
   margin-bottom: 0;
-  background-color: $lantern-black;
+  background-color: $Showin-black;
   opacity: 0.9;
   ul li a button {
     padding: 0.375rem 1.5rem;
@@ -50,7 +50,7 @@ body {
     h1,
     p {
       margin-bottom: 0.75rem;
-      color: $lantern-light-white;
+      color: $Showin-light-white;
     }
     h1 {
       margin-bottom: 1.5rem;
@@ -64,7 +64,7 @@ body {
 // discription
 
 .discription-container h2, .discription-container p {
-  color: $lantern-light-white;
+  color: $Showin-light-white;
 }
 
 .discription-container {
