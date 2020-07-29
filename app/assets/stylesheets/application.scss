@@ -15,8 +15,15 @@ $Showin-blue: #0071bc;
 $Showin-dark-blue: #0c2e64;
 $Showin-green: #008000;
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background-color: $Showin-black;
+  margin-bottom: 60px;
+  padding-top:   65px;
 }
 
 // header
