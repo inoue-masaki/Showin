@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rails',      '6.0.3'
 gem 'chartkick'
 gem 'mini_magick'
-gem 'aws-sdk-s3'
+gem 'aws-sdk-s3', require: false
 gem 'kaminari'
 gem 'kaminari-bootstrap'
 gem 'rails-i18n'
