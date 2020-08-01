@@ -2,10 +2,9 @@ class UserMailer < ApplicationMailer
 
   def account_activation(user)
     @user = user
-    mail to: user.email, subject: "【重要】Lantern Lanternよりアカウント有効化のためのメールを届けました"
+    mail to: user.email, subject: "Showinよりアカウント有効化のためのメールを届けました"
   end
 
-  # この部分は次章
   def password_reset
     @greeting = "Hi"
     mail to: "to@example.org"
@@ -13,6 +12,6 @@ class UserMailer < ApplicationMailer
   
   def password_reset(user)
     @user = user
-    mail to: user.email, subject: "【重要】Lantern Lanternよりパスワード再設定のためのメールを届けました"
+    mail to: user.email, subject: "Showinよりパスワード再設定のためのメールを届けました"
   end
 end
