@@ -13,6 +13,7 @@ class UsersController < ApplicationController
       flash[:info] = "認証用メールを送信しました。登録時のメールアドレスから認証を済ませてください"
       redirect_to root_url
     else
+      flash.now[:danger] = 'メールアドレスかパスワードが正しくありません'
       render 'new'
     end
   end
