@@ -81,6 +81,7 @@ Rails.application.configure do
   
   # Store uploaded files on the local file system (see config/storage.yml for options)
   config.active_storage.service = :amazon
+  config.action_mailer.default_url_options = { :host => 'showin' }
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
