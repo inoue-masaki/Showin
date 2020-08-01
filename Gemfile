@@ -25,7 +25,6 @@ group :development, :test do
   gem 'capybara', '3.28.0'
   gem 'rails-controller-testing'
   gem "factory_bot_rails"
-  gem 'sqlite3', '1.4.1'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
   gem 'database_cleaner'
   gem 'rspec-rails'
