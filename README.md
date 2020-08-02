@@ -1,42 +1,36 @@
-# Ruby on Rails チュートリアルのサンプルアプリケーション
+<h2 align="center">Showin</h2>
 
-これは、次の教材で作られたサンプルアプリケーションです。
-[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-（第6版）
-[Michael Hartl](https://www.michaelhartl.com/) 著
+## 概要
 
-## ライセンス
+Showinは記録アプリです　メッセージと時間を投稿し、保存することが出来ます。
+時間はログ化され、グラフによって期間ごと比較することが可能です。
 
-[Ruby on Rails チュートリアル](https://railstutorial.jp/)内にある
-ソースコードはMITライセンスとBeerwareライセンスのもとで公開されています。
-詳細は [LICENSE.md](LICENSE.md) をご覧ください。
+## URL
 
-## 使い方
+https://showin.herokuapp.com/
 
-このアプリケーションを動かす場合は、まずはリポジトリを手元にクローンしてください。
-その後、次のコマンドで必要になる RubyGems をインストールします。
+## 機能一覧
 
-```
-$ bundle install --without production
-```
+・ゲストユーザーログイン機能
+・記事投稿機能
+・画像アップロード機能
+・折れ線グラフ機能
+・記事詳細表示機能
+・ページネーション機能
+・管理ユーザー機能
+・ログイン・ログアウト機能
+・メール認証機能
 
-その後、データベースへのマイグレーションを実行します。
 
-```
-$ rails db:migrate
-```
+## 使用技術
 
-最後に、テストを実行してうまく動いているかどうか確認してください。
+・Ruby 2.6.6
+・Ruby on Rails 6.0.3
+・PostgreSQL(本番環境)
+・Bootstrap4
+・Heroku
+・jQuery
+・AmazonS3(画像のアップロート)
+・kaminari(ページネーション機能・件数制限)
+・Chartkick(線グラフ描写)
 
-```
-$ rails test
-```
-
-テストが無事に通ったら、Railsサーバーを立ち上げる準備が整っているはずです。
-
-```
-$ rails server
-```
-
-詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-を参考にしてください。
