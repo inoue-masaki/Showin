@@ -30,7 +30,7 @@ https://showin.herokuapp.com/
 ・Bootstrap4  
 ・Heroku  
 ・jQuery  
-・AmazonS3(画像のアップロード) 
+・AmazonS3(画像のアップロード)  
 ・kaminari(ページネーション機能・件数制限)  
 ・Chartkick(線グラフ描写)  
 
