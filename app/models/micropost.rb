@@ -7,9 +7,7 @@ class Micropost < ApplicationRecord
   validates :only_user_id, presence: true
   validate :picture
 
-  def resize_picture
-    return self.picture.variant(resize: '100x100').processed
-  end
+  
   
   private
   
