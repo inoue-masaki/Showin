@@ -13,7 +13,7 @@ gem 'faker'
 gem 'bcrypt', '3.1.12'
 gem 'bootstrap', '~> 4.3.1'
 gem "jquery-rails", "~> 4.3"
-gem 'puma',       '4.3.4'
+gem 'puma',       '4.3.9'
 gem 'sassc-rails'
 gem 'webpacker',  '4.0.7'
 gem 'turbolinks', '5.2.0'
